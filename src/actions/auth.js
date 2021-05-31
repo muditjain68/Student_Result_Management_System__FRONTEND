@@ -25,7 +25,7 @@ export const signup = (formData, router) => async (dispatch) => {
 
     console.log('Sign Up');
     
-    router.push('/student');
+    router.push('/dashboard');
   } catch (error) {
     console.log(error);
   }

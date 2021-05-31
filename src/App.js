@@ -25,8 +25,9 @@ class App extends Component {
           <React.Suspense fallback={loading}>
             <Switch>
               <Route path="/" exact component={Login} />
-              <Route path="/dashboard" exact component={TheLayout} />
+
              
+             <Route path="/dashboard" exact component={TheLayout} />
             </Switch>
           </React.Suspense>
       </BrowserRouter>
