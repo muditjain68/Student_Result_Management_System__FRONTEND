@@ -19,6 +19,7 @@ const Badges = React.lazy(() => import('./views/notifications/badges/Badges'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 
+
 const routes = [
   { path: '/', exact: true, name: 'Home' },
  { path: '/dashboard', name: 'Dashboard', component: Dashboard },

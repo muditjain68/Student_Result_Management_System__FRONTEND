@@ -24,12 +24,16 @@ import {
 import CIcon from '@coreui/icons-react'
 //import { DocsLink } from 'src/reusable'
 
+import TheHeader from '../../../containers/TheHeader';
+import TheFooter from '../../../containers/TheFooter';
+
 const AdminForm = () => {
 
 
   return (
     <>
-      <CRow>
+      <TheHeader />
+      <CRow style={{paddingTop:"100px"}}>
          <CCol xs="12" sm="12">
           <CCard>
             <CCardHeader>
@@ -471,6 +475,8 @@ const AdminForm = () => {
           </CCard>
         </CCol>
       </CRow>
+
+      <TheFooter />
   </>
 
   )

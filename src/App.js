@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 
+import AdminForm from './views/base/forms/AdminForm';
+import TeacherForm from './views/base/forms1/TeacherForm';
+import StudentForm from './views/base/forms3/StudentForm';
+
 const loading = (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse"></div>
@@ -28,6 +32,13 @@ class App extends Component {
 
              
              <Route path="/dashboard" exact component={TheLayout} />
+
+             <Route path="/adminForm" exact component={AdminForm} /> 
+
+
+             <Route path="/teacherForm" exact component={TeacherForm} />
+
+             <Route path="/student/:id" exact component={StudentForm} />
             </Switch>
           </React.Suspense>
       </BrowserRouter>
