@@ -23,6 +23,9 @@ import Table from './Table.js';
 import TheHeader from '../../../containers/TheHeader';
 import TheFooter from '../../../containers/TheFooter';
 
+import logo from './logo.jfif';
+import college from './College.jfif';
+
 const fields = ['SUBJECTS', 'Marks'];
 
 const StudentForm = ({match}) => {
@@ -140,11 +143,18 @@ const handleChange = (event)=>{
       <>
       {user?.result ?(
       <>
+      
       <CRow>
       <CCol xs="12" sm="12">
           <CCard>
             <CCardHeader style={{display:"flex", justifyContent:"space-between"}}>
-             <h2>Student Result</h2>
+              <div style={{display:"flex"}}>
+                <img src={logo} style={{height:"2.5rem",paddingRight:"2rem"}}></img>  
+              
+                <h2>Student Result</h2>
+                
+              </div>
+             
              <Button variant="contained"  color="secondary" onClick={logout}>Logout</Button>
             </CCardHeader>
           </CCard>
@@ -231,8 +241,11 @@ const handleChange = (event)=>{
                 </CFormGroup>
 
           </CCardBody>
+         
           </CCol>
       </CRow>
+     
+     
       <CRow>
         <CCol xs="12" lg="12">
           <CCard>
